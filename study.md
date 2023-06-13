@@ -36,5 +36,39 @@ Execution failed for task ':HelloSpringApplication.main()'.
 <br>
 <br>
 
+- 이번엔 8080포트를 이미 사용중이라고 에러 발생. 이건 아마 오라클 포트라? 그런듯
+- 에러 내용
+
+```java
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
 
 
+Process finished with exit code 1
+```
+
+<br>
+해결방법   
+
+1. 인텔리제이 포트 번호를 바꾸든지   
+2. 8080포트를 죽이든지 taskkill 
+
+
+* 포트 번호 바꾸는 법    
+  1. Run - Edit Configurations...로 들어간다.   
+  2. Environment variables에 server.port='원하는 포트번호'로 수정한다.   
+
+
+<br>
+<br>
+
+--------------------------------------
+
+
+<br>
+<br>
